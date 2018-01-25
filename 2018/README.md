@@ -6,6 +6,7 @@
 
 1. ES6
 1. JS权威指南
+1. Javascript设计模式与开发实践
 
 ##### Python: 
 
