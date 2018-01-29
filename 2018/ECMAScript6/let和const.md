@@ -1,5 +1,3 @@
-# let 和 const
-
 ## 不存在变量提升
 var命令会发生”变量提升“现象，即变量可以在声明之前使用，值为undefined。这种现象多多少少是有些奇怪的，按照一般的逻辑，变量应该在声明语句之后才可以使用。
 
@@ -40,8 +38,8 @@ ES5 只有全局作用域和函数作用域，没有块级作用域，这带来�
 ## 顶层对象
 
 1. 浏览器里面，顶层对象是window，但 Node 和 Web Worker 没有window。
-1. 浏览器和 Web Worker 里面，self也指向顶层对象，但是 Node 没有self。
-1. Node 里面，顶层对象是global，但其他环境都不支持。
+2. 浏览器和 Web Worker 里面，self也指向顶层对象，但是 Node 没有self。
+3. Node 里面，顶层对象是global，但其他环境都不支持。
 
         // 方法一
         (typeof window !== 'undefined'
@@ -51,7 +49,7 @@ ES5 只有全局作用域和函数作用域，没有块级作用域，这带来�
                 typeof global === 'object')
                 ? global
                 : this);
-
+       
             // 方法二
             var getGlobal = function () {
             if (typeof self !== 'undefined') { return self; }
