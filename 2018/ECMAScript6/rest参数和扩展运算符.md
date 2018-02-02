@@ -1,8 +1,50 @@
+## rest参数
+
+用于获取函数的多余参数，这样就不用使用arguments对象了，该变量将多余的参数放入数组中。
+
+语法：`...args`
+
+* 利用rest参数，可以向函数传入任意数量的参数
+
+  ```
+  function add(...args) {
+    let total = 0;
+    for (let key of args) {
+      total += key;
+    }
+    return total;
+  }
+
+  add(3, 5, 8);//16
+  add(3, 1);//4
+
+  ```
+
+* 使用rest参数代替arguments
+
+  ```
+  function sortNumbers() {
+    Array.prototype.slice.call(arguments).sort();
+  }
+
+  function sortNumbers(...args) {
+    args.sort();
+  }
+  ```
+
+* rest参数之后不能再有参数，即rest参数只能是最后一个参数
+
+
+
+
+
 ## 扩展运算符
 
-* 好比rest参数的逆运算，将一个数组转换为用逗号分隔的参数序列。
+* 好比rest参数的逆运算，将一个数组转换为用逗号分隔的序列。语法：`...[arr]`
 
-  **所以需要用圆括号装起来：（...[1, 2, 3, 4]）**
+  **在圆括号中成为参数序列：（...[1, 2, 3, 4]）=> (1, 2, 3, 4) **
+
+  **在方括号中成为新数组：[1, 2, ...[3, 4, 5]] => [1, 2, 3, 4, 5]**
 
 * 可以用来替代函数的apply方法:
 
@@ -13,8 +55,7 @@
   }
   var args = [0, 1, 2];
   f.apply(null, args);
-
-
+   
   //ES6写法
   function f(x, y, z) {
     //...
@@ -72,7 +113,51 @@
   //ES6写法
   [1, 2, ...more];
   [...arr1, ...arr2, ...arr3];
+
+  ```
+
+* 将实现了Iterator接口的对象，转化为数组
+
+
+  ```
+  //类数组对象
+  let nodeList = document.querySelectorAll('div');
+  let arr1 = [...nodeList];
+
+  let arrayLike = {
+    '0': 'a',
+    '1': 'b',
+    '2': 'c',
+    'length': 3
+  };
+  let arr2 = [...arrayLike];// TypeError: Cannot spread non-iterable object.
+  //arrayLike没有部署Iterator接口，所以不能使用扩展运算符，可以使用Array.from将其装换为数组
+
+  ```
+
+* Map和Set也实现了Iterator接口
+
+  ```
+  let map = new Map([
+    [0, 'a'],
+    [1, 'b'],
+    [2, 'c']
+  ]);
+  let arr1 = [...map.keys()];//[1, 2, 3]
+  let arr2 = [...map.values()];//[a, b, c]
+  let arr3 = [...map.entries()];//[[1, 'a'], [2, 'b'], [3, 'c']]
+  ```
+
+* Generator函数运行后，返回一个遍历器对象，因此也可以用扩展运算符
+
+  ```
+  const go = function* () {
+    yield 1;
+    yield 2;
+    yield 3;
+  };
+
+  [...go()]//[1, 2, 3]
   ```
 
   ​
-
