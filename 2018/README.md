@@ -5,8 +5,8 @@
 ##### Javascript:
 
 1. ES6------阅读√------笔记×
-2. JS权威指南
-3. Javascript设计模式与开发实践
+2. JS标准参考教程
+3. JavaScript设计模式与开发实践
 
 ##### Python: 
 

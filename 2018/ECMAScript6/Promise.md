@@ -28,7 +28,7 @@ Promise是异步编程的一种解决方案，它是一个容器，里面保存�
 
   ```
 
-* 图片预加载
+* 异步加载图片
 
   ```
   const loadImage = function(url) {
@@ -103,4 +103,8 @@ Promise是异步编程的一种解决方案，它是一个容器，里面保存�
 
   1. p1, p2, p3的状态都变成fulfilled, p也会变成fulfilled，p1, p2, p3的返回值组成一个数组传递给p的回调函数。
   2. p1, p2, p3中只要有一个被rejected，p的状态就变成rejected, 第一个被rejected的实例的返回值，会传递给p的回调函数。
+
+* Promise.race()也是将多个Promise实例包装成一个新的Promise实例
+
+  1. p1, p2, p3只要有一个先改变状态，p的状态就跟着改变。
 
