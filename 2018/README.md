@@ -1,10 +1,10 @@
 
 
-#### 2018书单
+#### 2018目录
 
 ##### Javascript:
 
-1. ES6------阅读√------笔记×
+1. [ES6](./ecmascript6/README.md)------阅读√------笔记×
 2. JavaScript设计模式与开发实践
 
 ##### Python: 
@@ -24,7 +24,7 @@
 2. 深入浅出react和redux
 
 ##### Webpack:
-1. webpack英文官网------阅读√------笔记√
+1. [webpack英文官网](./webpack/README.md)------阅读√------笔记√
 
 ##### Linux:
 
