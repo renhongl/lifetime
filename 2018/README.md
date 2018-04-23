@@ -21,7 +21,7 @@
 ##### React:
 
 1. react英文官网------阅读√------笔记×
-2. 深入浅出react和redux
+2. 深入浅出react和------阅√
 
 ##### Webpack:
 1. [webpack英文官网](webpack/README.md)------阅读√------笔记√
