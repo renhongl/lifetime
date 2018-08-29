@@ -1,4 +1,4 @@
-#### 如何下手写一个react-redux组件
+#### 如何写一个react-redux组件
 
 ##### 1. 设计数据结构
 
@@ -163,5 +163,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjYwMDUxM119
+eyJoaXN0b3J5IjpbMTYxOTU0MTM0M119
 -->
