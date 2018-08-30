@@ -70,7 +70,7 @@
 		        )
 		    }
 
-##### 3. 开发container组件
+##### 5. 开发container组件
 
    1. 定义mapStateToProps和mapDispatchToProps函数。创建一些用于读取和操作的属性，这些属性会传入组件中。例如以下的weather属性为一个值，updateWeather属性为一个函数，用于派发action。
 
@@ -114,8 +114,8 @@
    1. 将数据结构名称与组件reducer对应，即该数据由该reducer处理。
    2. 为该数据结构赋值初始状态。
    3. 在需要引用该组件的地方，引用该组件。
-   4. 全局只能有一个reducer，所以需要使用combineReducers({data: dataReducer})将所有reducer组合到一起。
-   5. 使用createStore(reducer, initState, applyMiddleware())方法生成store,并传入Provider组件中。
+   4. 全局只能有一个reducer，所以需要使用`combineReducers({data: dataReducer})`将所有reducer组合到一起。
+   5. 使用`createStore(reducer, initState, applyMiddleware())`方法生成store,并传入Provider组件中。
    6. 在需要使用中间件时，需要使用applyMiddleware方法，并在创建store时传入。
 		
 			import { createStore, combineReducers, applyMiddleware } from 'redux';
@@ -142,8 +142,8 @@
 			    document.getElementById('root')
 			)
 
-##### 8.异步情况
-1. 安装reduc-thunk：`npm install --save redux-thunk`。
+##### 8.使用redux-thunk执行异步请求
+1. 安装redux-thunk：`npm install --save redux-thunk`。
 2. 引入thunk并传入applyMiddleware参数中。
 3. 在action.js文件中，可以将函数作为action的return。
 4. 在获取到api的响应之后，再派发一个update的action，用于实现真正的weather数据更新。
@@ -163,5 +163,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MDk0NjQ2NywxNjE5NTQxMzQzXX0=
+eyJoaXN0b3J5IjpbNzUxOTMzNjY4LDE2MTk1NDEzNDNdfQ==
 -->
