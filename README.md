@@ -49,8 +49,8 @@
 2. [技术选型](qualified-team-leader/technical-selection.md)
 
 ##### 英语:
-1. 使用百词斩，每天背25个单词
-2. 使用流利说每天听说30分钟
+1. 使用百词斩，每天背25个单词---未完成
+2. 使用流利说每天听说30分钟---需要继续坚持
 
 #### 2018目标:
 
@@ -66,5 +66,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MTE4MjcxOV19
+eyJoaXN0b3J5IjpbMjA2NTYwNTE1MV19
 -->
