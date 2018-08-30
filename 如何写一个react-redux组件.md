@@ -6,13 +6,13 @@
    2. 该数据结构将挂在初始的state上面，如果为空，可设置为各种数据类型的初始化值。
    3. 思考该数据会有哪些操作，一般有：增加，更新，删除。
 
-		{
-			weather: {
-				wendu: 23,
-				shidu: 87,
-				tip: 'good for everything'
+			{
+				weather: {
+					wendu: 23,
+					shidu: 87,
+					tip: 'good for everything'
+				}
 			}
-		}
 
 ##### 2. 根据数据结构操作写ActionTypes和Actions
 1. 为该组件建立一个独立文件夹。
@@ -52,23 +52,23 @@
    4. 根据此前设计的数据结构，给需要读取的属性取一个名字，该属性就是此前设计的数据结构。
    5. 在组件中读取该数据结构的各种数据，用于在页面中显示。
 
-		render() {
-	        const { weather } = this.props;
-	        return (
-	            <div>
-	                <input type="search" value={this.state.search} onChange={this.onChange}/>
-	                <button onClick={this.onSearch}>Search</button>
-	                <div>
-	                    <h4>{weather ? weather.city : 'loading...'}</h4>
-	                    <div>{`温度：${weather ? weather.data.wendu : 'loading'}`}</div>
-	                    <div>{`湿度：${weather ? weather.data.shidu : 'loading'}`}</div>
-	                    <div>{`空气质量：${weather ? weather.data.quality : 'loading'}`}</div>
-	                    <div>{`PM2.5：${weather ? weather.data.pm25 : 'loading'}`}</div>
-	                    <div>{`温馨提醒：${weather ? weather.data.ganmao : 'loading'}`}</div>
-	                </div>
-	            </div>
-	        )
-	    }
+			render() {
+		        const { weather } = this.props;
+		        return (
+		            <div>
+		                <input type="search" value={this.state.search} onChange={this.onChange}/>
+		                <button onClick={this.onSearch}>Search</button>
+		                <div>
+		                    <h4>{weather ? weather.city : 'loading...'}</h4>
+		                    <div>{`温度：${weather ? weather.data.wendu : 'loading'}`}</div>
+		                    <div>{`湿度：${weather ? weather.data.shidu : 'loading'}`}</div>
+		                    <div>{`空气质量：${weather ? weather.data.quality : 'loading'}`}</div>
+		                    <div>{`PM2.5：${weather ? weather.data.pm25 : 'loading'}`}</div>
+		                    <div>{`温馨提醒：${weather ? weather.data.ganmao : 'loading'}`}</div>
+		                </div>
+		            </div>
+		        )
+		    }
 
 ##### 3. 开发container组件
 
@@ -118,29 +118,29 @@
    5. 使用createStore(reducer, initState, applyMiddleware())方法生成store,并传入Provider组件中。
    6. 在需要使用中间件时，需要使用applyMiddleware方法，并在创建store时传入。
 		
-		import { createStore, combineReducers, applyMiddleware } from 'redux';
-		import { Reducer as weatherReducer } from './component/weather';
-		import ReactDOM from 'react-dom';
-		import React from 'react';
-		import { Provider } from 'react-redux';
-		import { View as Weather } from './component/weather';
-		import reduxThuck from 'redux-thunk';
-		const reducer = combineReducers({
-		    weather: weatherReducer,
-		});
-		
-		const initState = {
-		    weather: null
-		}
-		
-		let store = createStore(reducer, initState, applyMiddleware(reduxThuck));
-		
-		ReactDOM.render(
-		    <Provider store={store}>
-		        <Weather />
-		    </Provider>,
-		    document.getElementById('root')
-		)
+			import { createStore, combineReducers, applyMiddleware } from 'redux';
+			import { Reducer as weatherReducer } from './component/weather';
+			import ReactDOM from 'react-dom';
+			import React from 'react';
+			import { Provider } from 'react-redux';
+			import { View as Weather } from './component/weather';
+			import reduxThuck from 'redux-thunk';
+			const reducer = combineReducers({
+			    weather: weatherReducer,
+			});
+			
+			const initState = {
+			    weather: null
+			}
+			
+			let store = createStore(reducer, initState, applyMiddleware(reduxThuck));
+			
+			ReactDOM.render(
+			    <Provider store={store}>
+			        <Weather />
+			    </Provider>,
+			    document.getElementById('root')
+			)
 
 ##### 8.异步情况
 1. 安装reduc-thunk：`npm install --save redux-thunk`。
@@ -163,5 +163,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczNDI5NDcyLDE2MTk1NDEzNDNdfQ==
+eyJoaXN0b3J5IjpbLTEzNDYxNzA2OTYsMTYxOTU0MTM0M119
 -->
