@@ -67,10 +67,10 @@
 
 
 9. 使用react, redux, router, saga模仿开发简书网站
-10. 10.使用python为简书网站做后台 
+10.使用python为简书网站做后台 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc5NDI3OTJdfQ==
+eyJoaXN0b3J5IjpbMTE4ODM1MTEzXX0=
 -->
