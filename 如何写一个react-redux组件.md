@@ -160,10 +160,10 @@
 		}
 
 ##### 9. 使用redux-saga执行异步请求
-1. redux-saga的原理是类似开启一个线程，监听
+1. redux-saga的原理是类似开启一个线程，监听异步action，然后，更易于阅读和测试。
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1OTk0NTc2LDE2MTk1NDEzNDNdfQ==
+eyJoaXN0b3J5IjpbLTEzNzQzMzEwNjQsMTYxOTU0MTM0M119
 -->
