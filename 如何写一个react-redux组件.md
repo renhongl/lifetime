@@ -190,21 +190,15 @@
 8. 开发组件需要的API:
 
 		export  async  function  fetchHotSearch(user) {
-
-return  await  axios.get(URL.hotSearch).then(response  => {
-
-return  response.data;
-
-}).catch(e  => {
-
-return  e;
-
-});
-
-}
+			return  await  axios.get(URL.hotSearch).then(response  => {
+				return  response.data;
+			}).catch(e  => {
+				return  e;
+			});
+		}
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTM1NzI1NCwtMTk3NjIwMDY4MSwxNj
-E5NTQxMzQzXX0=
+eyJoaXN0b3J5IjpbMTQxMjU2NzM2NiwtNzYxMzU3MjU0LC0xOT
+c2MjAwNjgxLDE2MTk1NDEzNDNdfQ==
 -->
