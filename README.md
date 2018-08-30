@@ -62,11 +62,12 @@
 6. 熟练掌握es6, es7语法---完成
 7. 正常无抵触的阅读全英文文档
 8. 学会使用Axure设计原型---完成
-修改
-9. 
+新增：
+9. 使用react, redux, router, saga模仿开发简书网站
+10.使用python为简书网站做后台 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5MjUwNDQ0XX0=
+eyJoaXN0b3J5IjpbMTQyNTM5Mjg1NV19
 -->
