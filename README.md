@@ -1,11 +1,12 @@
 
 
-#### 笔记ttt
+#### 笔记
 
 ##### Javascript:
 
 1. [Javascript标准参考教程](javascript/javascript标准参考教程.md)---√
 2. [JavaScript设计模式与开发实践v1](javascript/javascript设计模式与开发实践.md)---√
+3. Javascri
 
 ##### ES6
 
@@ -60,3 +61,6 @@
 
 
 **注：** v1指第一遍，v2指第二遍
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc4MTc3MzEzMl19
+-->
