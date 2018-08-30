@@ -50,21 +50,21 @@
 
 ##### 英语:
 1. 使用百词斩，每天背25个单词
+2. 使用流利说每天听说30分钟
 
 #### 2018目标:
 
-1. 完成基于原生js的 UI插件Mr UI开发
+1. 完成基于原生js的 UI插件Mr UI开发---√
 2. 使用python django为Mr UI开发后台
 3. 对node有全面深入的理解
-4. 对react及redux有全面深入的理解---v1√
+4. 对react及redux有全面深入的理解---√
 5. 熟练使用python编写各种爬虫
-6. 熟练掌握es6, es7语法---v1√
+6. 熟练掌握es6, es7语法---√
 7. 正常无抵触的阅读全英文文档
-8. 给每本读过的书写笔记文档(读一遍，练习一遍，写文档一遍)
-9. 学会使用Axure设计原型---v1√
+9. 学会使用Axure设计原型---√
 
 
-**注：** v1指第一遍，v2指第二遍
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDEyOTg2NF19
+eyJoaXN0b3J5IjpbLTEwNjUxODE3MzZdfQ==
 -->
