@@ -27,6 +27,10 @@
 
 1. react英文官网---√
 2. 深入浅出react和redux---√
+3. react redux---√
+4. react router---√
+5. redux thunk---√
+6. redux saga---√
 
 ##### Webpack:
 1. [webpack英文官网](webpack-react-redux/webpack.md)---√
@@ -62,5 +66,5 @@
 
 **注：** v1指第一遍，v2指第二遍
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTYzNjMzMDVdfQ==
+eyJoaXN0b3J5IjpbMTcwMDEyOTg2NF19
 -->
