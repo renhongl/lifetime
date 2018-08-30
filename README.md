@@ -55,16 +55,18 @@
 #### 2018目标:
 
 1. 完成基于原生js的 UI插件Mr UI开发---完成
-2. 使用python django为Mr UI开发后台
+2. ~~使用python django为Mr UI开发后台~~
 3. 对node有全面深入的理解
 4. 对react及redux有全面深入的理解---完成
 5. 熟练使用python编写各种爬虫
 6. 熟练掌握es6, es7语法---完成
 7. 正常无抵触的阅读全英文文档
-9. 学会使用Axure设计原型---完成
+8. 学会使用Axure设计原型---完成
+修改
+9. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTYwNTE1MV19
+eyJoaXN0b3J5IjpbNTM5MjUwNDQ0XX0=
 -->
