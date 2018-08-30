@@ -162,11 +162,13 @@
 ##### 9. 使用redux-saga执行异步请求
 1. redux-saga的原理是类似开启一个线程，监听异步action，然后执行分离出来的异步代码，这种方式更易于阅读和测试。
 2. 安装redux-saga: `npm install redux-saga --save`。
-3. 引入并创建saga middleware: `import  createSagaMiddleware  from  'redux-saga', `const  sagaMiddleware  =  createSagaMiddleware()`
+3. 引入saga: `import  createSagaMiddleware  from  'redux-saga', 
+4. 创建saga middleware: `const  sagaMiddleware  =  createSagaMiddleware()`。
+5. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDQ3MzU4MCwtMTk3NjIwMDY4MSwxNj
-E5NTQxMzQzXX0=
+eyJoaXN0b3J5IjpbMzgxOTM2OTExLC0xOTc2MjAwNjgxLDE2MT
+k1NDEzNDNdfQ==
 -->
