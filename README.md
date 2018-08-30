@@ -4,18 +4,18 @@
 
 ##### Javascript:
 
-1. [Javascript标准参考教程](javascript/javascript标准参考教程.md)---√
-2. [JavaScript设计模式与开发实践v1](javascript/javascript设计模式与开发实践.md)---√
-3. Javascript编程精解---√
+1. [Javascript标准参考教程](javascript/javascript标准参考教程.md)---完成
+2. [JavaScript设计模式与开发实践](javascript/javascript设计模式与开发实践.md)---完成
+3. Javascript编程精解---完成
 
 ##### ES6
 
-1. [ES6](ecmascript6/README.md)---√
+1. [ES6](ecmascript6/README.md)---完成
 
 ##### Python: 
 
 1. python基础(廖雪峰网络教程)
-2. 精通python网络爬虫---√
+2. 精通python网络爬虫---完成
 3. python爬虫开发与项目实战 
 4. django(网络教程)
 
@@ -25,15 +25,15 @@
 
 ##### React:
 
-1. react英文官网---√
-2. 深入浅出react和redux---√
-3. react redux---√
-4. react router---√
-5. redux thunk---√
-6. redux saga---√
+1. react英文官网---完成
+2. 深入浅出react和redux---完成
+3. react redux---完成
+4. react router---完成
+5. redux thunk---完成
+6. redux saga---完成
 
 ##### Webpack:
-1. [webpack英文官网](webpack-react-redux/webpack.md)---√
+1. [webpack英文官网](webpack-react-redux/webpack.md)---完成
 
 ##### Linux:
 
@@ -54,17 +54,17 @@
 
 #### 2018目标:
 
-1. 完成基于原生js的 UI插件Mr UI开发---√
+1. 完成基于原生js的 UI插件Mr UI开发---完成
 2. 使用python django为Mr UI开发后台
 3. 对node有全面深入的理解
-4. 对react及redux有全面深入的理解---√
+4. 对react及redux有全面深入的理解---完成
 5. 熟练使用python编写各种爬虫
-6. 熟练掌握es6, es7语法---√
+6. 熟练掌握es6, es7语法---完成
 7. 正常无抵触的阅读全英文文档
-9. 学会使用Axure设计原型---√
+9. 学会使用Axure设计原型---完成
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjUxODE3MzZdfQ==
+eyJoaXN0b3J5IjpbMTI1MTE4MjcxOV19
 -->
