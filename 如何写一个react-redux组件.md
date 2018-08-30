@@ -2,7 +2,7 @@
 
 ##### 1. 设计数据结构
 
-   1. 组件所显示的数据就来自该数据结构。
+   1. 组件所显示的数据来自该数据结构。
    2. 该数据结构将挂在初始的state上面，如果为空，可设置为各种数据类型的初始化值。
    3. 思考该数据会有哪些操作，一般有：增加，更新，删除。
 
@@ -163,5 +163,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTU0MTM0M119
+eyJoaXN0b3J5IjpbNjczNDI5NDcyLDE2MTk1NDEzNDNdfQ==
 -->
