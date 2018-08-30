@@ -164,11 +164,15 @@
 2. 安装redux-saga: `npm install redux-saga --save`。
 3. 引入saga: `import  createSagaMiddleware  from  'redux-saga', 
 4. 创建saga middleware: `const  sagaMiddleware  =  createSagaMiddleware()`。
-5. 
+5. 应用该中间件：`const  store  =  createStore(reducer, initialState, applyMiddleware(sagaMiddleware));`。
+6. 运行组件传出的saga：`sagaMiddleware.run(saga);`。
+7. 在组件中开发saga：
+			
+			
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgxOTM2OTExLC0xOTc2MjAwNjgxLDE2MT
+eyJoaXN0b3J5IjpbODA3MzEwMTQ3LC0xOTc2MjAwNjgxLDE2MT
 k1NDEzNDNdfQ==
 -->
