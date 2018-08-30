@@ -31,7 +31,7 @@
 		    }
 		}
 	
-##### 2. 根据Actions写Reducer
+##### 3. 根据Actions写Reducer
 1. 创建reducer.js。
 2. 根据actions写出对应的处理方法。
 
@@ -45,7 +45,7 @@
 		    }
 		}
 
-#####2. 根据数据结构开发纯组件
+##### 4. 根据数据结构开发纯组件
 
    2. 创建组件文件view.js。
    3. 引入React，写一个包含render方法的组件。
@@ -163,5 +163,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDYxNzA2OTYsMTYxOTU0MTM0M119
+eyJoaXN0b3J5IjpbMTk4MDk0NjQ2NywxNjE5NTQxMzQzXX0=
 -->
