@@ -143,6 +143,7 @@
 			)
 
 ##### 8.使用redux-thunk执行异步请求
+1. redux-thunk的原理是让action creator支持返回一个方法，
 1. 安装redux-thunk：`npm install --save redux-thunk`。
 2. 引入thunk并传入applyMiddleware参数中。
 3. 在action.js文件中，可以将函数作为action的return。
@@ -158,10 +159,11 @@
 		    }
 		}
 
-
+##### 9. 使用redux-saga执行异步请求
+1. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxOTMzNjY4LDE2MTk1NDEzNDNdfQ==
+eyJoaXN0b3J5IjpbODM2Mjg1NjIxLDE2MTk1NDEzNDNdfQ==
 -->
