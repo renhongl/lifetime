@@ -168,11 +168,28 @@
 6. 运行组件传出的saga：`sagaMiddleware.run(saga);`。
 7. 在组件中开发saga：
 			
-			
+		function*  queryHot(action) {
+			try {
+			yield  put(actions.getHotSearchStart({msg:  'header start'}));
+			const  result  =  yield  call(fetchHotSearch);
+			if (result.hotSearch.length  >  0) {
+			yield  put(actions.getHotSearchSuccess({...result, msg:  'header success'}));
+			} else {
+			yield  put(action.getHotSearchFail({msg:  'header fail'}));
+			}
+			} catch (error) {
+			yield  put(action.getHotSearchFail({msg:  'header faile'}));
+			}
+		}
+
+		function*  saga() {
+		yield  takeEvery(actionTypes.GET_HOT_SEARCH, queryHot);
+		}
+		export  default  saga;
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA3MzEwMTQ3LC0xOTc2MjAwNjgxLDE2MT
-k1NDEzNDNdfQ==
+eyJoaXN0b3J5IjpbLTE0Mjk4MzE2NDcsLTE5NzYyMDA2ODEsMT
+YxOTU0MTM0M119
 -->
