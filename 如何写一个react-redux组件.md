@@ -170,26 +170,41 @@
 			
 		function*  queryHot(action) {
 			try {
-			yield  put(actions.getHotSearchStart({msg:  'header start'}));
-			const  result  =  yield  call(fetchHotSearch);
-			if (result.hotSearch.length  >  0) {
-			yield  put(actions.getHotSearchSuccess({...result, msg:  'header success'}));
-			} else {
-			yield  put(action.getHotSearchFail({msg:  'header fail'}));
-			}
+				yield  put(actions.getHotSearchStart({msg:  'header start'}));
+				const  result  =  yield  call(fetchHotSearch);
+				if (result.hotSearch.length  >  0) {
+					yield  put(actions.getHotSearchSuccess({...result, msg:  'header success'}));
+				} else {
+					yield  put(action.getHotSearchFail({msg:  'header fail'}));
+				}
 			} catch (error) {
-			yield  put(action.getHotSearchFail({msg:  'header faile'}));
+				yield  put(action.getHotSearchFail({msg:  'header faile'}));
 			}
 		}
 
 		function*  saga() {
-		yield  takeEvery(actionTypes.GET_HOT_SEARCH, queryHot);
+			yield  takeEvery(actionTypes.GET_HOT_SEARCH, queryHot);
 		}
 		export  default  saga;
 
+8. 开发组件需要的API:
+
+		export  async  function  fetchHotSearch(user) {
+
+return  await  axios.get(URL.hotSearch).then(response  => {
+
+return  response.data;
+
+}).catch(e  => {
+
+return  e;
+
+});
+
+}
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjk4MzE2NDcsLTE5NzYyMDA2ODEsMT
-YxOTU0MTM0M119
+eyJoaXN0b3J5IjpbLTc2MTM1NzI1NCwtMTk3NjIwMDY4MSwxNj
+E5NTQxMzQzXX0=
 -->
