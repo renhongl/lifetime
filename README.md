@@ -74,32 +74,28 @@
 
 #### 技术提升计划
 
-学习
+##### 学习
 
-前端开发技能：
-Javascript编程精解（熟悉Javascript基础知识）
-Javascript设计模式（提升Javascirpt编程能力）
-React and Redux（掌握一门流行框架）
+1. 前端开发技能：
+	1. Javascript编程精解（熟悉Javascript基础知识）
+	2. Javascript设计模式（提升Javascirpt编程能力）
+	3. React and Redux（掌握一门流行框架）
 
-程序员基础技能：
-高级语言程序设计（Javascript加一门后端语言）
-数据结构
-算法分析与设计
+2. 程序员基础技能：
+	1. 高级语言程序设计（Javascript加一门后端语言）
+	2. 数据结构
+	3. 算法分析与设计
 
-良好的编码习惯：
-阅读几篇和编程语言相关的编码规范
+1. 良好的编码习惯：
+	1. 阅读几篇和编程语言相关的编码规范
 
+##### 练习
 
+1. 锻炼思维：
+1. 在掌握基础技能的基础上，在leetcode练习算法
 
-练习
-
-锻炼思维：
-在掌握基础技能的基础上，在leetcode练习算法
-
-
-
-附加：
-学习一门后端语言：python 或者 java
+##### 附加：
+1. 学习一门后端语言：python 或者 java
 
 
 
@@ -110,5 +106,5 @@ React and Redux（掌握一门流行框架）
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDI5MDIzLC0xMzUxMjEzNzU3XX0=
+eyJoaXN0b3J5IjpbLTUwOTM1NjA5MCwtMTM1MTIxMzc1N119
 -->
