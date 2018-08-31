@@ -7,7 +7,7 @@
   
 在状态模式中，我们创建表示各种状态的对象和一个行为随着状态对象改变而改变的 context 对象。
 
-**例子：**
+**面向对象例子：**
 
 	class BasicState{
 		constructor(control) {
@@ -94,6 +94,5 @@
 		}
 	}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQ0MDg4OTYsLTIwODgwOTQ0MzRdfQ
-==
+eyJoaXN0b3J5IjpbLTk1NDcwMjA4OSwtMjA4ODA5NDQzNF19
 -->
