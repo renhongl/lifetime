@@ -6,6 +6,8 @@
 
 策略模式可以消除程序中大片的条件分支语句。
 
+**例子：**
+
 ```
 class LevelA{
     calculate(salary) {
@@ -40,5 +42,5 @@ export class GetBonus{
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NjM2MzY0MV19
+eyJoaXN0b3J5IjpbLTExNjE5NTA1MDRdfQ==
 -->
