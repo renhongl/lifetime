@@ -52,92 +52,53 @@
 				super(control);
 			}
 
-		  
-		btnWasPressed(dom) {
+			btnWasPressed(dom) {
+				console.log('paused');
+				dom.innerText = 'start';
+				this.control.setState(this.control.pauseState);
+			}
 
-		console.log('paused');
-
-		dom.innerText = 'start';
-
-		this.control.setState(this.control.pauseState);
-
-		}
-
-		  
-
-		stopWasPressed(dom) {
-
-		console.log('stoped');
-
-		dom.innerText = 'start';
-
-		this.control.setState(this.control.stopState);
-
-		}
-
+			stopWasPressed(dom) {
+				console.log('stoped');
+				dom.innerText = 'start';
+				this.control.setState(this.control.stopState);
+			}
 		}
 
 		  
 
 		class PauseState extends BasicState{
+			constructor(control) {
+				super(control);
+			}
 
-		constructor(control) {
+			btnWasPressed(dom) {
+				console.log('starting play');
+				dom.innerText = 'pause';
+				this.control.setState(this.control.playState);
+			}
 
-		super(control);
-
-		}
-
-		  
-
-		btnWasPressed(dom) {
-
-		console.log('starting play');
-
-		dom.innerText = 'pause';
-
-		this.control.setState(this.control.playState);
-
-		}
-
-		  
-
-		stopWasPressed(dom) {
-
-		console.log('stoped');
-
-		dom.innerText = 'start';
-
-		this.control.setState(this.control.stopState);
-
-		}
-
+			stopWasPressed(dom) {
+				console.log('stoped');
+				dom.innerText = 'start';
+				this.control.setState(this.control.stopState);
+			}
 		}
 
 		  
 
 		export default class Control{
-
-		constructor() {
-
-		this.stopState = new StopState(this);
-
-		this.playState = new PlayState(this);
-
-		this.pauseState = new PauseState(this);
-
-		this.currentState = this.stopState;
-
-		}
-
-		  
-
-		setState(state) {
-
-		this.currentState = state;
-
-		}
-
+			constructor() {
+				this.stopState = new StopState(this);
+				this.playState = new PlayState(this);
+				this.pauseState = new PauseState(this);
+				this.currentState = this.stopState;
+			}
+  
+			setState(state) {
+			this.currentState = state;
+			}
 		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MTk0MjYxNl19
+eyJoaXN0b3J5IjpbLTIwMDc0MjMxNTBdfQ==
 -->
