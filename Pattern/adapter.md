@@ -7,7 +7,8 @@
 **面向对象例子：**
 		
 	/**
-	* 将方法getFullSingaporeCityData返回的shuz
+	* 将方法getFullSingaporeCityData返回的数据适配到
+	* getSingaporeCityData的格式
 	*/
 	class Adapter{
 		getSingaporeCityData() {
@@ -63,6 +64,6 @@
 		}
 	}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzEwOTI3OTIsMTgyNzQwNjEyMSw2OT
-Q5MDUzMjFdfQ==
+eyJoaXN0b3J5IjpbMTA2OTMzNTYwNSwxODI3NDA2MTIxLDY5ND
+kwNTMyMV19
 -->
