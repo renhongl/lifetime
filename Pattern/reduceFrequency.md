@@ -2,7 +2,7 @@
 
 
 
-**例子：**
+**面向对象例子：**
 
 	export default class ReduceFrequency{
 	    /**
@@ -79,5 +79,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MzkzNTgwMl19
+eyJoaXN0b3J5IjpbMTkyOTE0ODU0MV19
 -->
