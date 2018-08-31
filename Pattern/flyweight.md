@@ -12,9 +12,7 @@
 
   
 
-**例子：**
-
-  
+**面向对象例子：**
 
 	class Flyweight{
 		constructor() {
@@ -48,5 +46,5 @@
 		}
 	}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2Nzg5Mjc2NSwxMTM1OTA1MjE5XX0=
+eyJoaXN0b3J5IjpbLTM5MTkyNzA0OCwxMTM1OTA1MjE5XX0=
 -->
