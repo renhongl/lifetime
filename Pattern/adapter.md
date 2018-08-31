@@ -4,11 +4,7 @@
 
 适配器模式（Adapter Pattern）是作为两个不兼容的接口之间的桥梁。这种类型的设计模式属于结构型模式，它结合了两个独立接口的功能。
 
-  
-
 * 例子：
-
-  
 
 		class Adapter{
 			getSingaporeCityData() {
@@ -64,5 +60,5 @@
 			}
 		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk0OTA1MzIxXX0=
+eyJoaXN0b3J5IjpbMTgyNzQwNjEyMSw2OTQ5MDUzMjFdfQ==
 -->
