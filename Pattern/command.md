@@ -28,38 +28,23 @@
 
 		render(options) {
 		this.options = {...this.options, ...options};
-
 		for (let key of Object.keys(this.options)) {
-
 		this.login.style[key] = this.options[key];
-
 		}
-
 		document.body.appendChild(this.login);
-
 		}
-
 		  
-
 		remove() {
-
 		document.body.removeChild(this.login);
-
 		}
-
 		}
 
 		  
 
 		class RenderLoginCommand{
-
 		constructor() {
-
 		this.renderLogin = new RenderLogin();
-
-		}
-
-		  
+		}		  
 
 		excute(reciever) {
 
@@ -97,5 +82,5 @@
 
 		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NDA1MTgyM119
+eyJoaXN0b3J5IjpbLTk3MDMwNDM2M119
 -->
