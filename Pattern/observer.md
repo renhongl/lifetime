@@ -8,8 +8,6 @@
 
 * 例子：
 
-  
-
 		class Observer{
 			constructor() {
 				this.topicMapping = {};
@@ -43,9 +41,7 @@
 					this.publishStore[topic] = args;
 				}
 			}
-
 		  
-
 			unsubscribe(...args) {
 				let topic = args.shift();
 				let callback = args.shift();
@@ -57,12 +53,9 @@
 				} else {
 				console.log(`no topic ${topic} has been subscribe, so no need unsubscribe.`);
 				}
-				}
 			}
-
-		  
-
+		}
 		export default Observer;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNTU2MDMzN119
+eyJoaXN0b3J5IjpbMTg5NDU5ODA2M119
 -->
