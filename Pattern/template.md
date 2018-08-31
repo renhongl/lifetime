@@ -8,9 +8,9 @@
 
 模板方法模式是一种典型的通过封装变化提高系统扩展性的设计模式。子类的方法种类和执行顺序都是不变的，所以我们把这部分逻辑抽象到父类的模板方法中，而子类的方法具体怎么实现则是可变的，把这部分变化的逻辑封装到子类中。
 
-**例子：**
+**面向对象例子：**
 
-	//Example 1
+	
 	export class RenderDom{
 	    constructor() {
 
@@ -42,7 +42,9 @@
 	}
 
 
-	//Example 2
+**函数式例子：**
+
+
 	export const renderDom = function(obj) {
 	    let createDom = obj.createDom || function() {
 	        throw new Error('Must need implement createDom function');
@@ -77,5 +79,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzA2MDg5M119
+eyJoaXN0b3J5IjpbLTE1NTgxNDcxMzJdfQ==
 -->
