@@ -21,69 +21,38 @@
 			}
 			
 			btnWasPressed(dom) {
-
 				throw new Error('Basic function must be rewrite');
+			}
+		  
+			stopWasPressed(dom) {
+				throw new Error('Basic function must be rewrite');
+			}
+		}
 
+		class StopState extends BasicState{
+			constructor(control) {
+				super(control);
+			}
+
+			btnWasPressed(dom) {
+				console.log('starting play');
+				dom.innerText = 'pause';
+				this.control.setState(this.control.playState);
+			}
+
+			stopWasPressed(dom) {
+				console.log('stoped');
+				dom.innerText = 'start';
+				this.control.setState(this.control.stopState);
+			}
+		}
+  
+		class PlayState extends BasicState{
+			constructor(control) {
+				super(control);
 			}
 
 		  
-
-		stopWasPressed(dom) {
-
-		throw new Error('Basic function must be rewrite');
-
-		}
-
-		}
-
-		  
-
-		class StopState extends BasicState{
-
-		constructor(control) {
-
-		super(control);
-
-		}
-
-		  
-
-		btnWasPressed(dom) {
-
-		console.log('starting play');
-
-		dom.innerText = 'pause';
-
-		this.control.setState(this.control.playState);
-
-		}
-
-		  
-
-		stopWasPressed(dom) {
-
-		console.log('stoped');
-
-		dom.innerText = 'start';
-
-		this.control.setState(this.control.stopState);
-
-		}
-
-		}
-
-		  
-
-		class PlayState extends BasicState{
-
-		constructor(control) {
-
-		super(control);
-
-		}
-
-		  
-
 		btnWasPressed(dom) {
 
 		console.log('paused');
@@ -170,5 +139,5 @@
 
 		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDEwMDU0Ml19
+eyJoaXN0b3J5IjpbMTQ1MTk0MjYxNl19
 -->
