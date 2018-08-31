@@ -64,10 +64,9 @@
 			let k = i;
 			for (let j = i + 1; j < arr.length; j++) {
 				if (arr[j] < arr[k]) {
-				k = j;
+					k = j;
+				}
 			}
-			}
-
 			let temp = arr[i];
 			arr[i] = arr[k];
 			arr[k] = temp;
@@ -75,5 +74,5 @@
 		return arr;
 	}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjExOTQzMTMsMjE0MTM1MDU5MF19
+eyJoaXN0b3J5IjpbMTc4MTA2Nzc5NywyMTQxMzUwNTkwXX0=
 -->
