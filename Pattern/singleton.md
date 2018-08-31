@@ -4,7 +4,7 @@
 
 推荐使用惰性单例的方式创建，即在需要时才创建单例对象。并且需要把不变的部分隔离出来，把管理单例的逻辑和创建对象的逻辑分开，这两个方法可以独立变化而不互相影响。当它们连接在一起时，就完成了创建唯一实例对象的功能。
 
-**例子：**
+**面向对象例子：**
 
 ```
 //以下是基本实现方法，但是并没有实现：
@@ -53,6 +53,120 @@ export class GetSingleton{
 }
 
 ```
+
+
+**函数式例子：**
+
+	/**
+	 * 使用单例模式实现一个登陆框。
+	 * 包含一个智能命令模式，即可以直接实现请求的命令，不需要接收者的存在。
+	 */
+	(function () {
+
+	    var createLoginDiv = function () {
+	        var div;
+	        div = document.createElement('div');
+	        div.setAttribute('class', 'login');
+	        document.querySelector('#app').appendChild(div);
+	        
+	        var child = document.createElement('div');
+	        child.setAttribute('class', 'login-child');
+	        child.innerText = 'Login Dialog';
+	        div.appendChild(child);
+	        return div;
+	    };
+
+	    var createLoginButton = function () {
+	        var button;
+	        button = document.createElement('input');
+	        button.type = 'button';
+	        button.value = 'login';
+	        button.setAttribute('class', 'loginBtn');
+	        
+	        document.querySelector('#app').appendChild(button);
+	        return button;
+	    };
+
+	    var getSingle = function (fn) {
+	        var single;
+	        return function () {
+	            return single || (single = fn.apply(this, arguments));
+	        }
+	    };
+
+	    var createSingleLogin = getSingle(createLoginDiv);
+	    var createSingleLoginButton = getSingle(createLoginButton);
+
+	    var openLoginDivCommand = (function () {
+	        var loginDiv = createSingleLogin();
+	        return {
+	            excute: function () {
+	                loginDiv.addEventListener('click', function (e) {
+	                    if (e.target.getAttribute('class') !== 'login-child') {
+	                        macroCommand.undo();
+	                    }
+	                });
+	                loginDiv.style.display = 'flex';
+	            },
+	            undo: function () {
+	                loginDiv.style.display = 'none';
+	            }
+	        }
+	    })();
+
+	    var clearInputCommand = (function () {
+	        var input = document.querySelector('input');
+	        var cache;
+	        return {
+	            excute: function () {
+	                cache = input.value;
+	                input.value = '';
+	            },
+	            undo: function () {
+	                input.value = cache;
+	            }
+	        }
+	    })();
+
+	    var macroCommand = (function () {
+	        var commandList = [];
+	        return {
+	            add: function (command) {
+	                commandList.push(command);
+	            },
+	            excute: function () {
+	                for (var i = 0, len = commandList.length; i < len; i++) {
+	                    commandList[i].excute();
+	                }
+	            },
+	            undo: function () {
+	                for (var i = 0, len = commandList.length; i < len; i++) {
+	                    commandList[i].undo();
+	                }
+	            },
+	            redo: function () {
+	                macroCommand.excute();
+	            }
+	        }
+	    })();
+
+	    macroCommand.add(openLoginDivCommand);
+	    macroCommand.add(clearInputCommand);
+
+	    var init = function () {
+	        var loginButton = createSingleLoginButton();
+	        loginButton.addEventListener('click', function () {
+	            macroCommand.excute();
+	        });
+
+	        setTimeout(function () {
+	            macroCommand.redo();
+	        }, 10000);
+	    };
+
+	    init();
+
+	})();
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYwODAzMDA1LDE1NzQ5NTQ2MzZdfQ==
+eyJoaXN0b3J5IjpbMTE3NDE5NzQwMCwxNTc0OTU0NjM2XX0=
 -->
