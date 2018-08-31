@@ -2,8 +2,7 @@
 
 
 
-例子：
-
+**例子：**
 
 	export default class ReduceFrequency{
 	    /**
@@ -80,5 +79,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3MjU3OTcyXX0=
+eyJoaXN0b3J5IjpbLTQ5MzkzNTgwMl19
 -->
