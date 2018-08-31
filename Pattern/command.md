@@ -9,7 +9,7 @@
 
 命令模式最常见的应用场景是：有时候需要向某些对象发送请求，但是并不知道请求的接收者是谁，也不知道被请求的操作是什么。此时希望用一种松耦合的方式来设计程序，使得请求发送者和请求接收者能够消除彼此之间的耦合关系。
     
-   **例子：**
+   **面向对象例子：**
     
 
 	class RenderLogin{
@@ -58,7 +58,11 @@
 			this.renderLoginCommand = new RenderLoginCommand();
 		}
 	}
+
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjIwOTcyMDIsLTEwODgwODM5NzldfQ
-==
+eyJoaXN0b3J5IjpbMTMyNzQ5MDUyNSwtMTA4ODA4Mzk3OV19
 -->
