@@ -11,41 +11,23 @@
   
 
 		class Adapter{
-
-		getSingaporeCityData() {
-
-		return {
-
-		shenggang: {
-
-		id: '0001',
-
-		coordinate: [1.3312, 103.32423]
-
-		},
-
-		fenwei: {
-
-		id: '0002',
-
-		coordinate: [1.3221, 103.1212]
-
-		},
-
-		angmokio: {
-
-		id: '0003',
-
-		coordinate: [1.654, 103.32465423]
-
-		}
-
-		}
-
-		}
-
+			getSingaporeCityData() {
+				return {
+					shenggang: {
+						id: '0001',
+						coordinate: [1.3312, 103.32423]
+					},
+					fenwei: {
+						id: '0002',
+						coordinate: [1.3221, 103.1212]
+					},
+					angmokio: {
+						id: '0003',
+						coordinate: [1.654, 103.32465423]
+					}
+				}
+			}
 		  
-
 		getFullSingaporeCityData() {
 
 		return [
@@ -116,5 +98,5 @@
 
 		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDgwNzMzMTldfQ==
+eyJoaXN0b3J5IjpbLTEzMDUzMzM1MjddfQ==
 -->
