@@ -1,6 +1,6 @@
 
 
-
+ **例子：**
 
 	//Example 1
 	Function.prototype.before = function(beforeFn) {
@@ -69,5 +69,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODcxMjY3MTZdfQ==
+eyJoaXN0b3J5IjpbMTI1MjE2MDgxNV19
 -->
