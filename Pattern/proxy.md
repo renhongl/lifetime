@@ -8,7 +8,7 @@
 
 缓存代理：例如缓存ajax异步请求的数据，下次再打开同一页的时候，便可以直接使用之前的数据。
 
-**例子：**
+**mian例子：**
 
 ```
 export class LoadImage{
@@ -74,5 +74,5 @@ export class LoadDataProxy{
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MjI2MDEzOCw5MDU4NzM1NThdfQ==
+eyJoaXN0b3J5IjpbLTIwNzU1MTM0NDEsOTA1ODczNTU4XX0=
 -->
