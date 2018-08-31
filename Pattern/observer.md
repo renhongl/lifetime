@@ -10,103 +10,78 @@
 
   
 
-class Observer{
+		class Observer{
+			constructor() {
+				this.topicMapping = {};
+				this.publishStore = {};
+			}	  
 
-constructor() {
+			subscribe(...args) {
+				let topic = args.shift();
+				let callback = args.shift();
+				if (!this.topicMapping[topic]) {
+					this.topicMapping[topic] = [];
+				}
+				this.topicMapping[topic].push(callback);
+				console.log(`subscribed topic ${topic}`);
+				//check if had subscribed
+				if (this.publishStore[topic]) {
+				console.log(`trigger topic ${topic} immediately`);
+				this.publish(topic, this.publishStore[topic]);
+				delete this.publishStore[topic];
+				}
+			}
+		  
+			publish(...args) {
+				let topic = args.shift();
+				if (this.topicMapping[topic]) {
+				this.topicMapping[topic].forEach((v, k) => {
 
-this.topicMapping = {};
+				v.apply(null, args);
 
-this.publishStore = {};
+				});
 
-}
+				} else {
 
-  
+				console.log(`no topic: ${topic} has been subscribed, this publish will store here, after subscribe, will trigger`);
 
-subscribe(...args) {
+				this.publishStore[topic] = args;
 
-let topic = args.shift();
+				}
 
-let callback = args.shift();
+			}
 
-if (!this.topicMapping[topic]) {
+		  
 
-this.topicMapping[topic] = [];
+		unsubscribe(...args) {
 
-}
+		let topic = args.shift();
 
-this.topicMapping[topic].push(callback);
+		let callback = args.shift();
 
-console.log(`subscribed topic ${topic}`);
+		if (this.topicMapping[topic]) {
 
-//check if had subscribed
+		delete this.topicMapping[topic];
 
-if (this.publishStore[topic]) {
+		if (callback instanceof Function) {
 
-console.log(`trigger topic ${topic} immediately`);
+		callback(args);
 
-this.publish(topic, this.publishStore[topic]);
+		}
 
-delete this.publishStore[topic];
+		} else {
 
-}
+		console.log(`no topic ${topic} has been subscribe, so no need unsubscribe.`);
 
-}
+		}
 
-  
+		}
 
-publish(...args) {
+		}
 
-let topic = args.shift();
+		  
 
-if (this.topicMapping[topic]) {
-
-this.topicMapping[topic].forEach((v, k) => {
-
-v.apply(null, args);
-
-});
-
-} else {
-
-console.log(`no topic: ${topic} has been subscribed, this publish will store here, after subscribe, will trigger`);
-
-this.publishStore[topic] = args;
-
-}
-
-}
-
-  
-
-unsubscribe(...args) {
-
-let topic = args.shift();
-
-let callback = args.shift();
-
-if (this.topicMapping[topic]) {
-
-delete this.topicMapping[topic];
-
-if (callback instanceof Function) {
-
-callback(args);
-
-}
-
-} else {
-
-console.log(`no topic ${topic} has been subscribe, so no need unsubscribe.`);
-
-}
-
-}
-
-}
-
-  
-
-export default Observer;
+		export default Observer;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3OTAzNDM3OV19
+eyJoaXN0b3J5IjpbMjEyNjg5MDE1NV19
 -->
