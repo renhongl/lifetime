@@ -5,7 +5,7 @@
 
 中介者模式（Mediator Pattern）是用来降低多个对象和类之间的通信复杂性。这种模式提供了一个中介类，该类通常处理不同类之间的通信，并支持松耦合，使代码易于维护。中介者模式属于行为型模式。
 
-* 例子：
+**例子：**
 
         class Player{
             constructor(name, teamColor, playerDirector) {
@@ -117,5 +117,5 @@
             }
         }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk2NDgyMV19
+eyJoaXN0b3J5IjpbMjk0MjQ2NjAzLDM5NjQ4MjFdfQ==
 -->
