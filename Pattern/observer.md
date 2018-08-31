@@ -24,9 +24,9 @@
 				console.log(`subscribed topic ${topic}`);
 				//check if had subscribed
 				if (this.publishStore[topic]) {
-				console.log(`trigger topic ${topic} immediately`);
-				this.publish(topic, this.publishStore[topic]);
-				delete this.publishStore[topic];
+					console.log(`trigger topic ${topic} immediately`);
+					this.publish(topic, this.publishStore[topic]);
+					delete this.publishStore[topic];
 				}
 			}
 		  
@@ -57,5 +57,5 @@
 		}
 		export default Observer;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDU5ODA2M119
+eyJoaXN0b3J5IjpbMTA0MDcyMTI3MV19
 -->
