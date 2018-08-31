@@ -1,3 +1,4 @@
+#### 装饰者模式
 
 
  **例子：**
@@ -69,5 +70,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MjE2MDgxNV19
+eyJoaXN0b3J5IjpbLTI1MDUzMTY5MV19
 -->
