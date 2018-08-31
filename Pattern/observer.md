@@ -35,53 +35,34 @@
 			publish(...args) {
 				let topic = args.shift();
 				if (this.topicMapping[topic]) {
-				this.topicMapping[topic].forEach((v, k) => {
-
-				v.apply(null, args);
-
-				});
-
+					this.topicMapping[topic].forEach((v, k) => {
+						v.apply(null, args);
+					});
 				} else {
-
-				console.log(`no topic: ${topic} has been subscribed, this publish will store here, after subscribe, will trigger`);
-
-				this.publishStore[topic] = args;
-
+					console.log(`no topic: ${topic} has been subscribed, this publish will store here, after subscribe, will trigger`);
+					this.publishStore[topic] = args;
 				}
-
 			}
 
 		  
 
-		unsubscribe(...args) {
-
-		let topic = args.shift();
-
-		let callback = args.shift();
-
-		if (this.topicMapping[topic]) {
-
-		delete this.topicMapping[topic];
-
-		if (callback instanceof Function) {
-
-		callback(args);
-
-		}
-
-		} else {
-
-		console.log(`no topic ${topic} has been subscribe, so no need unsubscribe.`);
-
-		}
-
-		}
-
-		}
+			unsubscribe(...args) {
+				let topic = args.shift();
+				let callback = args.shift();
+				if (this.topicMapping[topic]) {
+					delete this.topicMapping[topic];
+					if (callback instanceof Function) {
+						callback(args);
+					}
+				} else {
+				console.log(`no topic ${topic} has been subscribe, so no need unsubscribe.`);
+				}
+				}
+			}
 
 		  
 
 		export default Observer;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNjg5MDE1NV19
+eyJoaXN0b3J5IjpbMTgzNTU2MDMzN119
 -->
