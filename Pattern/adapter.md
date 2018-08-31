@@ -5,7 +5,10 @@
 适配器模式（Adapter Pattern）是作为两个不兼容的接口之间的桥梁。这种类型的设计模式属于结构型模式，它结合了两个独立接口的功能。
 
 **面向对象例子：**
-
+		
+	/**
+	* 将方法getFullSingaporeCityData返回的shuz
+	*/
 	class Adapter{
 		getSingaporeCityData() {
 			return {
@@ -60,6 +63,6 @@
 		}
 	}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMjEwNjk0NiwxODI3NDA2MTIxLDY5ND
-kwNTMyMV19
+eyJoaXN0b3J5IjpbLTEwNzEwOTI3OTIsMTgyNzQwNjEyMSw2OT
+Q5MDUzMjFdfQ==
 -->
