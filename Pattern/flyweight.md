@@ -34,19 +34,19 @@
 					div.innerText = text;
 					parent.appendChild(div);
 					return div;
+				}
 			}
-		}
 		  
-		removeDiv(node, parent) {
-			parent.removeChild(node);
-			this.recover(node);
-			console.log(`when ui remove div, restore this div, now pool has: ${this.divPool.length}`);
-		}
+			removeDiv(node, parent) {
+				parent.removeChild(node);
+				this.recover(node);
+				console.log(`when ui remove div, restore this div, now pool has: ${this.divPool.length}`);
+			}
 		  
-		recover(node) {
-			this.divPool.push(node);
+			recover(node) {
+				this.divPool.push(node);
 			}
 		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MDUzNjk4N119
+eyJoaXN0b3J5IjpbMTEzNTkwNTIxOV19
 -->
