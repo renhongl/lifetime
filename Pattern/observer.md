@@ -6,7 +6,7 @@
 
 **命名空间：** 如果整个项目都使用了此模式，很容易在没有命名空间的情况下混淆话题。
 
-**例子：**
+**面向对象例子：**
 
 	class Observer{
 		constructor() {
@@ -56,6 +56,84 @@
 		}
 	}
 	export default Observer;
+
+**函数式例子：**
+
+	(function () {
+	    window.Event = (function () {
+	        var clientList = {},
+	            offline = {},
+	            listen,
+	            trigger,
+	            remove;
+	            
+	        listen = function (key, fn) {
+	            if (!clientList[key]) {
+	                clientList[key] = [];
+	            }
+	            clientList[key].push(fn);
+	            if (offline[key]) {
+	                fn.apply(this, offline[key].shift());
+	            }
+	        };
+
+	        trigger = function () {
+	            var key = Array.prototype.shift.call(arguments),
+	                fns = clientList[key];
+	            if (!fns || fns.length === 0) {
+	                if (!offline[key]) {
+	                    offline[key] = [];
+	                }
+	                offline[key].push(arguments);
+	                return false;
+	            }
+	            for (var i = 0, len = fns.length; i < len; i++) {
+	                fns[i].apply(this, arguments);
+	            }
+	        };
+
+	        remove = function (key, fn) {
+	            var fns = clientList[key];
+	            if (!fns) {
+	                return false;
+	            }
+	            if (!fn) {
+	                fns.length = 0;
+	            } else {
+	                for (var i = 0, len = fns.length; i < len; i++) {
+	                    var _fn = fns[i];
+	                    if (_fn === fn) {
+	                        fns.splice(i, 1);
+	                    }
+	                }
+	            }
+	        };
+
+	        return {
+	            listen: listen,
+	            trigger: trigger,
+	            remove: remove,
+	        }
+
+	    })();
+
+	    var init = function () {
+	        Event.trigger('loaded', {
+	            name: 'renhongl',
+	            age: 18
+	        });
+
+	        setTimeout(function () {
+	            Event.listen('loaded', function (args) {
+	                console.log(args);
+	            });
+	        }, 2000);
+	    };
+
+	    init();
+
+	})();
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4Mjc2NzM3XX0=
+eyJoaXN0b3J5IjpbLTE3NzM1NzU0MTVdfQ==
 -->
