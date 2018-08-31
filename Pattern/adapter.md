@@ -28,75 +28,41 @@
 				}
 			}
 		  
-		getFullSingaporeCityData() {
-
-		return [
-
-		{
-
-		name: 'shenggang',
-
-		id: '0001',
-
-		coordinate: [1.3312, 103.32423],
-
-		peopleCount: 10000
-
-		},
-
-		{
-
-		name: 'fenwei',
-
-		id: '0002',
-
-		coordinate: [1.3312, 103.32423],
-
-		peopleCount: 20000
-
-		},
-
-		{
-
-		name: 'angmokio',
-
-		id: '0003',
-
-		coordinate: [1.3312, 103.32423],
-
-		peopleCount: 30000
-
-		}
-
-		]
-
-		}
-
-		  
-
-		dataAdapter(fn) {
-
-		let ret = {};
-
-		let list = fn();
-
-		list.forEach(function(v, k) {
-
-		let {name, ...props} = v;
-
-		ret[name] = {...props};
-
-		});
-
-		return function() {
-
-		return ret;
-
-		}
-
-		}
-
+			getFullSingaporeCityData() {
+				return [
+					{
+						name: 'shenggang',
+						id: '0001',
+						coordinate: [1.3312, 103.32423],
+						peopleCount: 10000
+					},
+					{
+						name: 'fenwei',
+						id: '0002',
+						coordinate: [1.3312, 103.32423],
+						peopleCount: 20000
+					},
+					{
+						name: 'angmokio',
+						id: '0003',
+						coordinate: [1.3312, 103.32423],
+						peopleCount: 30000
+					}
+				]
+			}
+	  
+			dataAdapter(fn) {
+				let ret = {};
+				let list = fn();
+				list.forEach(function(v, k) {
+					let {name, ...props} = v;
+					ret[name] = {...props};
+				});
+				return function() {
+					return ret;
+				}
+			}
 		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDUzMzM1MjddfQ==
+eyJoaXN0b3J5IjpbNjk0OTA1MzIxXX0=
 -->
