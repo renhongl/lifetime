@@ -20,15 +20,15 @@
 		while(begin <= end) {
 			let middle = begin + Number.parseInt((end - begin)/2);
 			if (arr[middle] < key) {
-			begin = middle + 1;
+				begin = middle + 1;
 			} else  if (arr[middle] > key) {
-			end = middle - 1;
+				end = middle - 1;
 			} else {
-			return middle;
+				return middle;
 			}
 		}
 		return -1;
 	}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjIyODkxNjddfQ==
+eyJoaXN0b3J5IjpbNDU1MzkwMjgxXX0=
 -->
