@@ -76,7 +76,11 @@ export class LoadDataProxy{
 
 
 **函数式例子：**
-
+	
+	/**
+	 * 使用虚拟代理实现图片预加载
+	 * 使用缓存代理实现ajax异步请求数据
+	 */
 	(function () {
 
 	    var logoImg = (function () {
@@ -160,5 +164,5 @@ export class LoadDataProxy{
 
 	})();
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDU5NjgwNzAsOTA1ODczNTU4XX0=
+eyJoaXN0b3J5IjpbOTE1OTg4OTE2LDkwNTg3MzU1OF19
 -->
