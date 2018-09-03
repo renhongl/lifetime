@@ -109,16 +109,21 @@
 
 ##### 编写测试方法
 
-		let p = new People('renhong', 18, 'male');
-		console.log(p.getAge());
-		p.setAge(20);
-		console.log(p.getAge());
-		
-		let s = new Student
+	let p = new People('renhong', 18, 'male');
+	console.log(p.getAge());
+	p.setAge(20);
+	console.log(p.getAge());
+	console.log(p.run());
+	console.log(p.study());
+	
+	let s = new Student('renhong', 18, 'male');
+	console.log(s.run());
+	console.log(s.study());
+	...	
 
 
 **注：** 如果是没有返回值的方法，只用简单的打印字符串即可。
 注意方法参数的传递，注意返回值。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1ODcxNzEzOV19
+eyJoaXN0b3J5IjpbLTE3MTM2MzI3NDJdfQ==
 -->
