@@ -107,11 +107,18 @@
 		}
 
 
+##### 编写测试方法
 
+		let p = new People('renhong', 18, 'male');
+		console.log(p.getAge());
+		p.setAge(20);
+		console.log(p.getAge());
+		
+		let s = new Student
 
 
 **注：** 如果是没有返回值的方法，只用简单的打印字符串即可。
 注意方法参数的传递，注意返回值。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU1NjM4NjBdfQ==
+eyJoaXN0b3J5IjpbLTg1ODcxNzEzOV19
 -->
