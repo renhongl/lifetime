@@ -17,7 +17,8 @@
 
 ### 数字的扩展
 1. 使用`Number.isNaN()`判断数字是不是NaN
-2. 使用`Number.parseInt(5.22)`将小数转换成整数。
+2. 使用`Number.parseInt(5.22)`将小数转换成整数,parseInt是去掉小数部分。
+3. 使用 `Math.`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODUzNzQ0NF19
+eyJoaXN0b3J5IjpbLTE4NDE5Njg1MzhdfQ==
 -->
