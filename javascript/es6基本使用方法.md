@@ -12,7 +12,8 @@
 
 ### 字符串的扩展
 1. 判断字符串中有字符串`'falskdjflkd'.includes('ab')//false`
-2. 字符串中有变量引用，就使用模板字符串：``
+2. 字符串中有变量引用，就使用模板字符串：`fjlafdjflajfas${this.props.value}`
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDE4OTA3NjFdfQ==
+eyJoaXN0b3J5IjpbLTg3MDA4NDY0OF19
 -->
