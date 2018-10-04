@@ -25,10 +25,25 @@
 ### 函数的扩展
 1. 使用参数默认值
 		
-			function log(x, y = 'World') {
-			  console.log(x, y);
-			}
+		function log(x, y = 'World') {
+		  console.log(x, y);
+		}
+
+2. 使用rest参数
+
+		function add(...values) {
+		  let sum = 0;
+
+		  for (var val of values) {
+		    sum += val;
+		  }
+
+		  return sum;
+		}
+
+		add(2, 5, 3) // 10
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NDk3MjIyMiwxMjEwODQxMDcxXX0=
+eyJoaXN0b3J5IjpbLTIxNDYzMTE5NDAsMTIxMDg0MTA3MV19
 -->
