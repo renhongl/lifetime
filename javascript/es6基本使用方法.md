@@ -22,7 +22,13 @@
 4. 使用`Math.ceil(5.22)`将小数向上取整。//6
 5. 使用`6.432432.toFixed(2)`将小数取固定位数，返回字符串。//'6.43'
 
+### 函数的扩展
+1. 使用参数默认值
+		
+			function log(x, y = 'World') {
+			  console.log(x, y);
+			}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDYxODg1NywxMjEwODQxMDcxXX0=
+eyJoaXN0b3J5IjpbMTQ3NDk3MjIyMiwxMjEwODQxMDcxXX0=
 -->
