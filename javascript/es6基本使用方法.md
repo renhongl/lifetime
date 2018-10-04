@@ -14,6 +14,10 @@
 1. 判断字符串中有字符串`'falskdjflkd'.includes('ab')//false`
 2. 字符串中有变量引用，就使用模板字符串：`fjlafdjflajfas${this.props.value}`
 
+
+### 数字的扩展
+1. 使用`Number.isNaN()`判断数字是不是NaN
+2. 使用`Nm`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDA4NDY0OF19
+eyJoaXN0b3J5IjpbLTEzNjIzOTMzNzddfQ==
 -->
