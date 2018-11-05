@@ -14,14 +14,15 @@
 
 ##### Python: 
 
-1. python基础(廖雪峰网络教程)
+1. python基础(廖雪峰网络教程)---基本完成
 2. 精通python网络爬虫---完成
 3. python爬虫开发与项目实战 
-4. django(网络教程)
+4. django(网络教程)---基本完成
+5. flask web开发实战---基本完成
 
 ##### Nodejs:
 
-1. nodejs权威指南      
+~~1. nodejs权威指南~~
 
 ##### React:
 
@@ -31,6 +32,7 @@
 4. react router---完成
 5. redux thunk---完成
 6. redux saga---完成
+7. react jest---完成
 
 ##### Webpack:
 1. [webpack英文官网](webpack-react-redux/webpack.md)---完成
@@ -56,7 +58,9 @@
 
 1. 完成基于原生js的 UI插件Mr UI开发---完成
 2. ~~使用python django为Mr UI开发后台~~
-3. 对node有全面深入的理解
+3. 使用python flask开发简书后台
+4. 使用python爬虫为简书项目挖取数据
+3. ~~对node有全面深入的理解~~
 4. 对react及redux有全面深入的理解---完成
 5. 熟练使用python编写各种爬虫
 6. 熟练掌握es6, es7语法---完成
@@ -91,7 +95,7 @@
 
 ##### 练习
 
-1. 锻炼思维：
+1. 锻炼思维
 1. 在掌握基础技能的基础上，在leetcode练习算法
 
 ##### 附加：
@@ -105,9 +109,3 @@
 
 
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwOTM1NjA5MCwtMTM1MTIxMzc1N119
--->
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDI4OTAzNF19
--->
