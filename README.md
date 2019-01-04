@@ -1,18 +1,16 @@
 
 
-#### 2018学习计划
+# 2018学习计划
 
-##### Javascript:
+## Javascript:
 
 1. Javascript标准参考教程---完成
 2. JavaScript设计模式与开发实践---完成
 3. Javascript编程精解---完成
+4. ES6---完成
 
-##### ES6
 
-1. ES6---完成
-
-##### Python: 
+## Python: 
 
 1. python基础(廖雪峰网络教程)---基本完成
 2. 精通python网络爬虫---完成
@@ -20,7 +18,7 @@
 4. django(网络教程)---基本完成
 5. flask web开发实战---基本完成
 
-##### Nodejs:
+## Nodejs:
 
 ~~1. nodejs权威指南~~
 
@@ -110,5 +108,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzU5NzkxODVdfQ==
+eyJoaXN0b3J5IjpbLTE0OTA3ODUyMTNdfQ==
 -->
