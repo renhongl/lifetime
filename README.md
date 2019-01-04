@@ -22,7 +22,7 @@
 
 ~~1. nodejs权威指南~~
 
-##### React:
+## React:
 
 1. react英文官网---完成
 2. 深入浅出react和redux---完成
@@ -32,27 +32,27 @@
 6. redux saga---完成
 7. react jest---完成
 
-##### Webpack:
-1. [webpack英文官网](webpack-react-redux/webpack.md)---完成
+## Webpack:
+1. webpack英文官网---完成
 
-##### Linux:
+## Linux:
 
 1. linux shell编程从初学到精通
 
-##### 架构:
+## 架构:
 
 1. 软件架构设计
 
-**项目管理:**
+## 项目管理:
 
-1. [事业发展](qualified-team-leader/career-development.md)
-2. [技术选型](qualified-team-leader/technical-selection.md)
+1. 事业发展
+2. 技术选型
 
-##### 英语:
+## 英语:
 1. 使用百词斩，每天背25个单词---未完成
 2. 使用流利说每天听说30分钟---需要继续坚持
 
-#### 2018目标:
+## 2018目标:
 
 1. 完成基于原生js的 UI插件Mr UI开发---完成
 2. ~~使用python django为Mr UI开发后台~~
@@ -74,9 +74,9 @@
 
 
 
-#### 技术提升计划
+## 技术提升计划
 
-##### 学习
+### 学习
 
 1. 前端开发技能：
 	1. Javascript编程精解（熟悉Javascript基础知识）
@@ -91,13 +91,11 @@
 1. 良好的编码习惯：
 	1. 阅读几篇和编程语言相关的编码规范
 
-##### 练习
+### 练习
 
 1. 锻炼思维
 1. 在掌握基础技能的基础上，在leetcode练习算法
 
-##### 附加：
-1. 学习一门后端语言：python 或者 java
 
 
 
@@ -107,6 +105,3 @@
 
 
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTA3ODUyMTNdfQ==
--->
