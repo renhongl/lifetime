@@ -1,16 +1,16 @@
 
 
-#### 读书计划
+#### 2018学习计划
 
 ##### Javascript:
 
-1. [Javascript标准参考教程](javascript/javascript标准参考教程.md)---完成
-2. [JavaScript设计模式与开发实践](javascript/javascript设计模式与开发实践.md)---完成
+1. Javascript标准参考教程---完成
+2. JavaScript设计模式与开发实践---完成
 3. Javascript编程精解---完成
 
 ##### ES6
 
-1. [ES6](ecmascript6/README.md)---完成
+1. ES6---完成
 
 ##### Python: 
 
@@ -109,3 +109,6 @@
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMzU5NzkxODVdfQ==
+-->
